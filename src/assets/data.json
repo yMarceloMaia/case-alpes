@@ -1,0 +1,34 @@
+[
+    {
+      "name": "BMW Série 1",
+      "image": "/veiculos/serie1.png"
+    },
+    {
+      "name": "BMW M3 Competition",
+      "image": "/veiculos/m3.png"
+    },
+    {
+      "name": "BMW M5",
+      "image": "/veiculos/m5.png"
+    },
+    {
+      "name": "BMW X2",
+      "image": "/veiculos/x2.png"
+    },
+    {
+      "name": "BMW Série 4",
+      "image": "/veiculos/serie4.png"
+    },
+    {
+      "name": "BMW Série 3",
+      "image": "/veiculos/serie3.png"
+    },
+    {
+      "name": "BMW Z4",
+      "image": "/veiculos/z4.png"
+    },
+    {
+      "name": "BMW Série 2",
+      "image": "/veiculos/serie2.png"
+    }
+  ]
