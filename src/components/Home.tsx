@@ -3,7 +3,7 @@ import data from '../assets/data.json'
 import bannerDesktop from '/banners/desktop-1.jpg'
 
 function Home({ isOpenHeader, setIsOpenHeader }: any) {
-  const [cars, setCars] = useState(data)
+  const [cars] = useState(data)
 
   return (
     <main onClick={() => setIsOpenHeader(false)} className={`flex flex-col justify-center items-center z-0 max-[599px]:w-full`}>
