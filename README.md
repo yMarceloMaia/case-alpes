@@ -4,6 +4,11 @@
 
 É necessário ter o nodejs e typescript instalado na máquina.
 
+O projeto foi feito usando:
+- Typescript;
+- React;
+- Tailwindcss;
+
 #### Comandos
 
 - Clonar este repositório
