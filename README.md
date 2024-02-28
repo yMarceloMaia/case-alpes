@@ -25,5 +25,5 @@ npm run dev
 
 ## Deploy do projeto:
 
-https://case-alpes-qqtxlpf4p-ymarcelomaia.vercel.app/
+https://case-alpes.vercel.app/
 
