@@ -3,7 +3,7 @@ import bmw from '/veiculos/serie1.png'
 import HeaderForm from "./HeaderForm";
 
 function Header({ isOpenHeader, setIsOpenHeader }: any) {
-  const [isOpen, setIsOpen] = useState(false)
+  const [dropIsOpen, setDropIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false);
   const [screen, setScreen] = useState(window.innerWidth);
 
@@ -30,7 +30,7 @@ function Header({ isOpenHeader, setIsOpenHeader }: any) {
     <header className={`relative z-50`}>
       { // condição para renderização do header
         (scrolled || isOpenHeader || (screen < 600)) &&
-        <HeaderForm isOpenHeader={isOpenHeader} setIsOpenHeader={setIsOpenHeader} screen={screen}/>
+        <HeaderForm isOpenHeader={isOpenHeader} setIsOpenHeader={setIsOpenHeader} screen={screen} setDropIsOpen={setDropIsOpen}/>
       }
       {
         !isOpenHeader &&
@@ -51,7 +51,7 @@ function Header({ isOpenHeader, setIsOpenHeader }: any) {
               </button>
             </section>
             <section className="w-full flex  h-1/2 items-center justify-center text-[#666666] font-bold">
-              <div onClick={() => setIsOpen(!isOpen)} className="flex gap-14 md:gap-20 cursor-pointer justify-center">
+              <div onClick={() => setDropIsOpen(!dropIsOpen)} className="flex gap-14 md:gap-20 cursor-pointer justify-center">
                 <p>1</p>
                 <p>2</p>
                 <p>3</p>
@@ -69,7 +69,7 @@ function Header({ isOpenHeader, setIsOpenHeader }: any) {
         </section>
       }
       { // Dropdown do menu
-        isOpen &&
+        dropIsOpen &&
         <section className="h-[383px] w-full bg-white absolute z-20 flex flex-col md:text-xl justify-center items-center border-2 shadow-sm">
           <section className="h-full flex max-[650px]:scale-95">
             <svg className="w-6 fill-[#666666] mr-10 cursor-pointer" id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.13,3.33a.7.7,0,0,1,1,0l1.13,1.09a.65.65,0,0,1,0,.93v0L10.48,12l6.75,6.63a.66.66,0,0,1,0,.93l0,0L16.1,20.67a.7.7,0,0,1-1,0l-8.36-8.2a.65.65,0,0,1,0-.92l0,0Z" /></svg>

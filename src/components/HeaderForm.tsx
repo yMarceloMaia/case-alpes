@@ -1,4 +1,8 @@
-function HeaderForm({ isOpenHeader, setIsOpenHeader, screen }: any) {
+function HeaderForm({ isOpenHeader, setIsOpenHeader, screen, setDropIsOpen }: any) {
+    function handleClick(){
+        setIsOpenHeader(!isOpenHeader)
+        setDropIsOpen(false)
+    }
 
     return (
         <>
@@ -14,9 +18,9 @@ function HeaderForm({ isOpenHeader, setIsOpenHeader, screen }: any) {
                 <div className="relative max-[599px]:w-full">
                     {
                         isOpenHeader ?
-                            <button onClick={() => setIsOpenHeader(!isOpenHeader)} className='text-sm w-full ss:w-[255px] border-none h-[60px] font-bold text-white bg-[#666666]'>Minimizar</button>
+                            <button onClick={handleClick} className='text-sm w-full ss:w-[255px] border-none h-[60px] font-bold text-white bg-[#666666]'>Minimizar</button>
                             :
-                            <button onClick={() => setIsOpenHeader(!isOpenHeader)} className='text-sm w-full ss:w-[255px] border-none h-[60px] font-bold text-white bg-[#1C69D4] hover:bg-[#0351BE]'>Solicitar cotação</button>
+                            <button onClick={handleClick} className='text-sm w-full ss:w-[255px] border-none h-[60px] font-bold text-white bg-[#1C69D4] hover:bg-[#0351BE]'>Solicitar cotação</button>
                     }
                     {
                         isOpenHeader &&

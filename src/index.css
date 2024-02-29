@@ -1,9 +1,10 @@
+@import url(https://db.onlinewebfonts.com/c/ac95f91c55cc591ecf37a4d136ff8031?family=BMWTypeNext+Pro+Regular);
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  
+  font-family: normal normal 300 'BMWTypeNext Pro Regular', Light;
 }
 
 *{

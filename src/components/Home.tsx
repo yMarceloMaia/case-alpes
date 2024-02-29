@@ -12,8 +12,8 @@ function Home({ isOpenHeader, setIsOpenHeader }: any) {
         <div className="fixed top-0 left-0 w-full h-full bg-black opacity-50 z-40 pointer-events-none"></div>
       }
 
-      <section className='w-full flex justify-center relative z-20 max-[599px]:mt-[120px] max-[599px]:w-[360px]'>
-        <img src={bannerDesktop} className='w-full object-contain z-10 max-[599px]:w-[360px]' alt="" />
+      <section className='w-full flex justify-center relative z-20 max-[599px]:mt-[120px] '>
+        <img src={bannerDesktop} className='w-full object-contain z-10' alt="" />
         { 
           !isOpenHeader &&
           <section className='absolute hidden lg-[500px]:flex flex-col min-w-[255px] min-h-[478px] scale-y-75 scale-x-75 xl:scale-y-100 xl:scale-x-100 top-8 right-[20vw] xl:min-w-[255px] xl:w-[15vw] xl:h-[478px] bg-white justify-around items-center z-30'>
@@ -90,14 +90,14 @@ function Home({ isOpenHeader, setIsOpenHeader }: any) {
 
       </section>
 
-      <p className="text-[40px]">ESCOLHA SEU BMW</p>
+      <p className="ss:text-[40px] text-[#262626] font-thin mt-20 mb-10">ESCOLHA SEU BMW</p>
 
       <section className='flex flex-wrap justify-center gap-10 max-w-[1300px] '>
         {
           cars.map((car) => (
             <div key={car.name} className='w-[255px] h-[363px] flex flex-col justify-around text-xl'>
               <img src={car.image} className='w-full hover:opacity-50 cursor-pointer' alt="" />
-              <p>{car.name}</p>
+              <p className='text-[#262626] font-thin'>{car.name}</p>
               <button className='text-sm w-full border-none h-[45px] font-bold text-white bg-[#1C69D4] hover:bg-[#0351BE]'>Cotação</button>
               <div className='flex items-center gap-2'>
                 <p className='text-xs text-[#666666]'>Compartilhe:</p>
